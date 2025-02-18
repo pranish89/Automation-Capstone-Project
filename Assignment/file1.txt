@@ -1,4 +1,4 @@
 this is file1 from main
-
+edited from branch2
 edited from branch1
 
