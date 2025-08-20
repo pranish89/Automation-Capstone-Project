@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="maxwait" value="5"/>
+  <parameter name="minwait" value="3"/>
+  <parameter name="url" value="https://www.amazon.com"/>
+  <test thread-count="2" parallel="tests" name="test1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Amazon.Wishlist">
+        <methods>
+          <include name="filter_select_products"/>
+          <include name="Login"/>
+          <include name="driverInit"/>
+          <include name="add_to_wishlist"/>
+          <include name="logout"/>
+          <include name="search_products"/>
+          <include name="driverClose"/>
+        </methods>
+      </class> <!-- Amazon.Wishlist -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

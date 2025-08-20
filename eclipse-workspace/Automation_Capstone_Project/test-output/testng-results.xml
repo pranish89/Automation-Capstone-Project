@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="4" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-16T11:18:15 IST" name="Suite" finished-at="2025-08-16T11:18:46 IST" duration-ms="31319">
+    <groups>
+    </groups>
+    <test started-at="2025-08-16T11:18:15 IST" name="Test" finished-at="2025-08-16T11:18:45 IST" duration-ms="30584">
+      <class name="Amazon.Wishlist">
+        <test-method is-config="true" signature="driverInit(java.lang.String)[pri:0, instance:Amazon.Wishlist@4d0d9fe7]" started-at="2025-08-16T11:18:15 IST" name="driverInit" finished-at="2025-08-16T11:18:16 IST" duration-ms="1175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInit -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Amazon.Wishlist@4d0d9fe7]" started-at="2025-08-16T11:18:16 IST" name="Login" finished-at="2025-08-16T11:18:22 IST" duration-ms="6672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="search_products()[pri:-1, instance:Amazon.Wishlist@4d0d9fe7]" started-at="2025-08-16T11:18:22 IST" name="search_products" finished-at="2025-08-16T11:18:28 IST" duration-ms="5734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_products -->
+        <test-method signature="filter_select_products()[pri:0, instance:Amazon.Wishlist@4d0d9fe7]" started-at="2025-08-16T11:18:28 IST" name="filter_select_products" finished-at="2025-08-16T11:18:37 IST" depends-on-methods="Amazon.Wishlist.search_products" duration-ms="8592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filter_select_products -->
+        <test-method signature="add_to_wishlist()[pri:0, instance:Amazon.Wishlist@4d0d9fe7]" started-at="2025-08-16T11:18:37 IST" name="add_to_wishlist" finished-at="2025-08-16T11:18:42 IST" depends-on-methods="Amazon.Wishlist.filter_select_products" duration-ms="4744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_to_wishlist -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Amazon.Wishlist@4d0d9fe7]" started-at="2025-08-16T11:18:42 IST" name="logout" finished-at="2025-08-16T11:18:44 IST" duration-ms="2882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="driverClose()[pri:0, instance:Amazon.Wishlist@4d0d9fe7]" started-at="2025-08-16T11:18:44 IST" name="driverClose" finished-at="2025-08-16T11:18:45 IST" duration-ms="692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- Amazon.Wishlist -->
+    </test> <!-- Test -->
+    <test started-at="2025-08-16T11:18:15 IST" name="test1" finished-at="2025-08-16T11:18:46 IST" duration-ms="31319">
+      <class name="Amazon.Wishlist">
+        <test-method is-config="true" signature="driverInit(java.lang.String)[pri:0, instance:Amazon.Wishlist@210ab13f]" started-at="2025-08-16T11:18:15 IST" name="driverInit" finished-at="2025-08-16T11:18:17 IST" duration-ms="2230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInit -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Amazon.Wishlist@210ab13f]" started-at="2025-08-16T11:18:17 IST" name="Login" finished-at="2025-08-16T11:18:35 IST" duration-ms="17826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="search_products()[pri:-1, instance:Amazon.Wishlist@210ab13f]" started-at="2025-08-16T11:18:35 IST" name="search_products" finished-at="2025-08-16T11:18:35 IST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_products -->
+        <test-method signature="filter_select_products()[pri:0, instance:Amazon.Wishlist@210ab13f]" started-at="2025-08-16T11:18:35 IST" name="filter_select_products" finished-at="2025-08-16T11:18:41 IST" depends-on-methods="Amazon.Wishlist.search_products" duration-ms="5837" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //span[contains(text(),'Ikigai')]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [e76808e9-0583-4e21-8346-949607597c0e, findElement {using=xpath, value=//span[contains(text(),'Ikigai')]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14008, moz:profile: C:\Users\mages\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: e76808e9-0583-4e21-8346-949607597c0e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[contains(text(),'Ikigai')]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [e76808e9-0583-4e21-8346-949607597c0e, findElement {using=xpath, value=//span[contains(text(),'Ikigai')]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14008, moz:profile: C:\Users\mages\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: e76808e9-0583-4e21-8346-949607597c0e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at Amazon.Wishlist.filter_select_products(Wishlist.java:125)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filter_select_products -->
+        <test-method signature="add_to_wishlist()[pri:0, instance:Amazon.Wishlist@210ab13f]" started-at="2025-08-16T11:18:41 IST" name="add_to_wishlist" finished-at="2025-08-16T11:18:41 IST" depends-on-methods="Amazon.Wishlist.filter_select_products" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Amazon.Wishlist.add_to_wishlist() on instance Amazon.Wishlist@210ab13f depends on not successfully finished methods 
+[Amazon.Wishlist.filter_select_products() on instance Amazon.Wishlist@210ab13f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Amazon.Wishlist.add_to_wishlist() on instance Amazon.Wishlist@210ab13f depends on not successfully finished methods 
+[Amazon.Wishlist.filter_select_products() on instance Amazon.Wishlist@210ab13f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_to_wishlist -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Amazon.Wishlist@210ab13f]" started-at="2025-08-16T11:18:41 IST" name="logout" finished-at="2025-08-16T11:18:44 IST" duration-ms="2722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="driverClose()[pri:0, instance:Amazon.Wishlist@210ab13f]" started-at="2025-08-16T11:18:44 IST" name="driverClose" finished-at="2025-08-16T11:18:46 IST" duration-ms="2020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- Amazon.Wishlist -->
+    </test> <!-- test1 -->
+  </suite> <!-- Suite -->
+</testng-results>
